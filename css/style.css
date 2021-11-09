@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html, body{
+
+	background-color: rgb(255,255,253);
+	margin: 0;
+	padding: 0;
+}
+
+.main-header{
+
+	font-family: Raleway;
+	text-align: center;
+	margin: 2em auto;
+}
+
+#dataatual{
+
+	font-family: monospace;
+	font-size: 1.2em;
+	margin-top: 2em;
+	text-align: center;
+}
+
+.main-div{
+
+	text-align: center;
+	max-width: 600px;
+	margin: 14em auto;
+
+}
+
+.main-div p {
+
+	font-family: Palatino Linotype;
+	
+}
+
+#btn{
+
+	text-align: center;
+	width: 50px;
+	border: none;
+	background-color: transparent;
+	margin-bottom: 2em;
+}
+
+.main-header hr{
+
+	text-align: center;
+	width: 10%;
+	height: 1px;
+	border-right: transparent;
+	border-left: transparent ;
+}
+
+.rodape{
+
+	font-family: monospace;
+	text-align: center;
+}
+
+.rodape a{
+
+	color:rgb(0, 0, 0);
+	text-decoration: none;
+}
