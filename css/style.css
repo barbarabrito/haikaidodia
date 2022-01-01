@@ -2,10 +2,25 @@
 
 html, body{
 
-	background-color: rgb(255,255,253);
+	/*background-color: rgb(255,255,253);*/
+
 	margin: 0;
 	padding: 0;
 }
+
+html{
+	position: relative;
+	min-height: 100%;
+}
+
+body{
+
+	background-image:url('../imgs/2.jpg');
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	
+}
+ 
 
 .main-header{
 
@@ -26,7 +41,7 @@ html, body{
 
 	text-align: center;
 	max-width: 600px;
-	margin: 14em auto;
+	margin: 15em auto;
 
 }
 
@@ -56,6 +71,9 @@ html, body{
 
 .rodape{
 
+	position: absolute;
+	bottom: 6%;
+	width: 100%;
 	font-family: monospace;
 	text-align: center;
 }
@@ -64,4 +82,12 @@ html, body{
 
 	color:rgb(0, 0, 0);
 	text-decoration: none;
+}
+
+
+@media (max-height: 850px)
+{
+  .main-div{
+  	margin: 10em auto;
+  }
 }
