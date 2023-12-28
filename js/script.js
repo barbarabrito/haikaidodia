@@ -3,8 +3,8 @@ window.onload = function init() {
   const day = today.getDate();
 
   getHaiku(day)
-    .then(haiku => {
-      document.getElementById('haiku').innerHTML = haiku;
+    .then(data => {
+      document.getElementById('haiku').innerHTML = data.haiku;
     })
     .catch(error => {
       console.error(error);
@@ -28,7 +28,11 @@ function getHaiku(day) {
         return response.json();
       })
       .then(data => {
-        const haiku = data.haikus[day];
+        const haiku = data.haikus.find(
+          function (item) {
+            return (item.id === day);
+          }
+        );
         resolve(haiku);
       })
       .catch(error => {
